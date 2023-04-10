@@ -15,7 +15,21 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="510dp"
-            android:orientation="vertical"></LinearLayout>
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/grupo_vide" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/vide" />
+        </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
