@@ -5,10 +5,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".AprenderView"
+    android:orientation="horizontal"
     android:background="#07224f">
 
     <Button
         android:id="@+id/button3"
+
         android:layout_width="256dp"
         android:layout_height="65dp"
         android:layout_marginTop="60dp"
