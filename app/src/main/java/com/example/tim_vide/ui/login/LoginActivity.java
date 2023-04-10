@@ -23,8 +23,6 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.tim_vide.R;
-import com.example.tim_vide.ui.login.LoginViewModel;
-import com.example.tim_vide.ui.login.LoginViewModelFactory;
 import com.example.tim_vide.databinding.ActivityLoginVideBinding;
 
 public class LoginActivity extends AppCompatActivity {

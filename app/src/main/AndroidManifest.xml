@@ -12,11 +12,7 @@
         android:theme="@style/Theme.TIM_Vide"
         tools:targetApi="31">
         <activity
-<<<<<<< HEAD
             android:name=".Home"
-=======
-            android:name=".AprenderView"
->>>>>>> 81e3dcbb3781c9c8e714873320d286b9802662bb
             android:exported="false" />
         <activity
             android:name=".ui.login.LoginVide"
