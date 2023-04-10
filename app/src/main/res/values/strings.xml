@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">TIM_Vide</string>
+    <string name="app_name">Vide</string>
     <string name="title_activity_login_vide">LoginVide</string>
     <string name="prompt_email">Email</string>
     <string name="prompt_password">Password</string>

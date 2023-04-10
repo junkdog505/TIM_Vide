@@ -9,7 +9,7 @@
 
     <Button
         android:id="@+id/button3"
-        android:layout_width="256dp"
+        android:layout_width="350dp"
         android:layout_height="65dp"
         android:layout_marginTop="60dp"
         android:background="@drawable/custom_button"
@@ -25,7 +25,7 @@
 
     <Button
         android:id="@+id/button4"
-        android:layout_width="228dp"
+        android:layout_width="350dp"
         android:layout_height="89dp"
         android:layout_marginTop="96dp"
         style="?attr/materialButtonOutlinedStyle"
@@ -42,7 +42,7 @@
 
     <Button
         android:id="@+id/button5"
-        android:layout_width="228dp"
+        android:layout_width="350dp"
         android:layout_height="89dp"
         android:text="Números"
         android:textAllCaps="false"
@@ -58,7 +58,7 @@
 
     <Button
         android:id="@+id/button6"
-        android:layout_width="228dp"
+        android:layout_width="350dp"
         android:layout_height="89dp"
         android:text="Signos"
         android:textAllCaps="false"

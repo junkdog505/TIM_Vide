@@ -21,7 +21,7 @@
             <Button
                 android:id="@+id/button3"
                 android:layout_width="350dp"
-                android:layout_height="65dp"
+                android:layout_height="89dp"
                 android:text="Ayuda"
                 android:textSize="35dp"
                 android:textAllCaps="false"
@@ -39,9 +39,10 @@
             <Button
                 android:id="@+id/button4"
                 android:layout_width="350dp"
-                android:layout_height="65dp"
+                android:layout_height="89dp"
                 android:text="Aprender"
                 android:textSize="35dp"
+                android:textAllCaps="false"
                 android:textColor="#FDCE24"
                 style="?attr/materialButtonOutlinedStyle"
 
@@ -58,9 +59,10 @@
             <Button
                 android:id="@+id/button5"
                 android:layout_width="350dp"
-                android:layout_height="65dp"
+                android:layout_height="89dp"
                 android:text="Practicar"
                 android:textSize="35dp"
+                android:textAllCaps="false"
                 android:textColor="#FDCE24"
                 style="?attr/materialButtonOutlinedStyle"
 
