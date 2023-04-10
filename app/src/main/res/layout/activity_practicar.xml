@@ -38,7 +38,7 @@
             android:gravity="center">
 
             <Button
-                android:id="@+id/button8"
+                android:id="@+id/btnLetras"
                 android:layout_width="350dp"
                 android:layout_height="89dp"
                 android:text="Letras"
@@ -58,7 +58,7 @@
             android:gravity="center">
 
             <Button
-                android:id="@+id/button9"
+                android:id="@+id/btnNumeros"
                 android:layout_width="350dp"
                 android:layout_height="89dp"
                 android:text="Números"
@@ -77,7 +77,7 @@
             android:gravity="center">
 
             <Button
-                android:id="@+id/button10"
+                android:id="@+id/btnSignos"
                 android:layout_width="350dp"
                 android:layout_height="89dp"
                 android:text="Signos"
@@ -96,7 +96,7 @@
             android:gravity="center">
 
             <Button
-                android:id="@+id/button11"
+                android:id="@+id/btnPalabras"
                 android:layout_width="350dp"
                 android:layout_height="89dp"
                 android:text="Palabras"
