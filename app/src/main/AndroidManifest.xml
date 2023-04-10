@@ -12,6 +12,9 @@
         android:theme="@style/Theme.TIM_Vide"
         tools:targetApi="31">
         <activity
+            android:name=".Teclado"
+            android:exported="false" />
+        <activity
             android:name=".AprenderView"
             android:exported="false" />
         <activity
