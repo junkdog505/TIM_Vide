@@ -37,7 +37,7 @@
             android:orientation="vertical">
 
             <Button
-                android:id="@+id/button4"
+                android:id="@+id/btnAprender"
                 android:layout_width="350dp"
                 android:layout_height="89dp"
                 android:text="Aprender"
@@ -57,7 +57,7 @@
             android:orientation="vertical">
 
             <Button
-                android:id="@+id/button5"
+                android:id="@+id/btnPracticar"
                 android:layout_width="350dp"
                 android:layout_height="89dp"
                 android:text="Practicar"

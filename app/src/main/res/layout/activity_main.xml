@@ -38,21 +38,20 @@
             android:gravity="center">
 
             <Button
-                android:id="@+id/button"
+                android:id="@+id/btnIniciarSesion"
                 android:layout_width="350dp"
                 android:layout_height="65dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/custom_button"
                 android:text="Iniciar Sesión"
                 android:textAllCaps="false"
-                android:layout_marginBottom="20dp"
                 android:textSize="20dp"
-                android:background="@drawable/custom_button"
                 app:backgroundTint="@null"
 
-                app:cornerRadius="25dp"
-                />
+                app:cornerRadius="25dp" />
 
             <Button
-                android:id="@+id/button2"
+                android:id="@+id/btnRegistrar"
                 android:layout_width="350dp"
                 android:layout_height="65dp"
                 android:textAllCaps="false"
