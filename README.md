@@ -15,5 +15,3 @@ Una aplicación de lenguaje braille podría ayudar a las personas con discapacid
  - Android
  ## IDE Utilizado 
  - Android Studio
-
-## Pero Chidow es tan puta que 
