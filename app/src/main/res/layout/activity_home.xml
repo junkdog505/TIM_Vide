@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Home">
+    tools:context=".Home"
+    android:background="#07224f">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -19,9 +20,14 @@
 
             <Button
                 android:id="@+id/button3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Ayuda"/>
+                android:layout_width="350dp"
+                android:layout_height="65dp"
+                android:text="Ayuda"
+                android:textSize="35dp"
+                android:textAllCaps="false"
+                android:background="@drawable/custom_button"
+                app:backgroundTint="@null"
+                />
         </LinearLayout>
 
         <LinearLayout
@@ -32,9 +38,15 @@
 
             <Button
                 android:id="@+id/button4"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Aprender" />
+                android:layout_width="350dp"
+                android:layout_height="65dp"
+                android:text="Aprender"
+                android:textSize="35dp"
+                android:textColor="#FDCE24"
+                style="?attr/materialButtonOutlinedStyle"
+
+                app:strokeColor="#FDCE24"
+                app:cornerRadius="25dp"/>
         </LinearLayout>
 
         <LinearLayout
@@ -45,9 +57,15 @@
 
             <Button
                 android:id="@+id/button5"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Practicar" />
+                android:layout_width="350dp"
+                android:layout_height="65dp"
+                android:text="Practicar"
+                android:textSize="35dp"
+                android:textColor="#FDCE24"
+                style="?attr/materialButtonOutlinedStyle"
+
+                app:strokeColor="#FDCE24"
+                app:cornerRadius="25dp"/>
         </LinearLayout>
 
     </LinearLayout>
