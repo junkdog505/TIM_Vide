@@ -42,33 +42,36 @@
 
     <Button
         android:id="@+id/button5"
+        style="?attr/materialButtonOutlinedStyle"
         android:layout_width="350dp"
         android:layout_height="89dp"
         android:text="Números"
         android:textAllCaps="false"
         android:textColor="#FDCE24"
-        style="?attr/materialButtonOutlinedStyle"
-        app:strokeColor="#FDCE24"
         android:textSize="40sp"
         app:cornerRadius="25dp"
         app:layout_constraintBottom_toTopOf="@+id/button6"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button4" />
+        app:layout_constraintTop_toBottomOf="@+id/button4"
+        app:layout_constraintVertical_bias="0.465"
+        app:strokeColor="#FDCE24" />
 
     <Button
         android:id="@+id/button6"
+        style="?attr/materialButtonOutlinedStyle"
         android:layout_width="350dp"
         android:layout_height="89dp"
+        android:layout_marginBottom="188dp"
         android:text="Signos"
         android:textAllCaps="false"
-        style="?attr/materialButtonOutlinedStyle"
-        app:strokeColor="#FDCE24"
         android:textColor="#FDCE24"
         android:textSize="40sp"
         app:cornerRadius="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="530dp" />
+        app:strokeColor="#FDCE24" />
 </androidx.constraintlayout.widget.ConstraintLayout>
