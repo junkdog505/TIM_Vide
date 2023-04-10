@@ -9,8 +9,8 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
+
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_teclado);
+        setContentView(R.layout.activity_main);
     }
 }
