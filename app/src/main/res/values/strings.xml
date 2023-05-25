@@ -1,15 +1,15 @@
 <resources>
     <string name="app_name">Vide</string>
     <string name="title_activity_login_vide">LoginVide</string>
-    <string name="prompt_name">Name</string>
-    <string name="prompt_lastname">Last Name</string>
-    <string name="prompt_email">Email</string>
-    <string name="prompt_password">Password</string>
-    <string name="action_sign_in">Sign in</string>
-    <string name="action_register">Register</string>
-    <string name="action_sign_in_short">Sign in</string>
-    <string name="welcome">"Welcome !"</string>
-    <string name="invalid_username">Not a valid username</string>
-    <string name="invalid_password">Password must be >5 characters</string>
-    <string name="login_failed">"Login failed"</string>
+    <string name="prompt_name">Nombres</string>
+    <string name="prompt_lastname">Apellidos</string>
+    <string name="prompt_email">Correo</string>
+    <string name="prompt_password">Contraseña</string>
+    <string name="action_sign_in">Ingresar</string>
+    <string name="action_register">Registrarse</string>
+    <string name="action_sign_in_short">Acceder</string>
+    <string name="welcome">Bienvenido :)</string>
+    <string name="invalid_username">No es un usuario válido</string>
+    <string name="invalid_password">La contraseña debe tener más de 5 caracteres</string>
+    <string name="login_failed">"Inicio no concretado"</string>
 </resources>

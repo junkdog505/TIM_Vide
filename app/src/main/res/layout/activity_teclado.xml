@@ -4,12 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Teclado">
+    tools:context=".Teclado"
+    android:background="#07224f">
 
     <Button
         android:id="@+id/button1"
         android:layout_width="150dp"
-        android:layout_height="50dp"
+        android:layout_height="40dp"
         android:layout_marginTop="16dp"
         android:background="@drawable/custom_button"
         android:text="Siguiente"
@@ -22,10 +23,11 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+
     <Button
         android:id="@+id/button2"
         android:layout_width="150dp"
-        android:layout_height="50dp"
+        android:layout_height="40dp"
         android:layout_marginTop="16dp"
         android:background="@drawable/custom_button"
         android:text="Ayuda"
@@ -58,31 +60,35 @@
                 android:id="@+id/btn_d1"
                 style="?attr/materialButtonOutlinedStyle"
                 android:layout_width="match_parent"
-                android:layout_height="70dp"
+                android:layout_height="75dp"
                 android:text=" Dedo 1"
                 app:strokeColor="#FDCE24"
-
+                android:background="@drawable/custom_button"
+                android:layout_marginBottom="10dp"
                 />
 
             <Button
                 android:id="@+id/button14"
                 style="?attr/materialButtonOutlinedStyle"
                 android:layout_width="match_parent"
-                android:layout_height="70dp"
+                android:layout_height="75dp"
                 android:text="Dedo 2"
-                app:strokeColor="#FDCE24" />
+                app:strokeColor="#FDCE24"
+                android:background="@drawable/custom_button"
+                android:layout_marginBottom="10dp"/>
 
             <Button
                 android:id="@+id/button15"
                 style="?attr/materialButtonOutlinedStyle"
                 android:layout_width="match_parent"
-                android:layout_height="70dp"
-                android:text="Dedo 3"
-                app:strokeColor="#FDCE24" />
+                android:layout_height="75dp"
+                android:text="Dedo 2"
+                app:strokeColor="#FDCE24"
+                android:background="@drawable/custom_button"/>
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="381dp"
+            android:layout_width="391dp"
             android:layout_height="match_parent"
             android:orientation="vertical">
 
@@ -90,25 +96,31 @@
                 android:id="@+id/button11"
                 style="?attr/materialButtonOutlinedStyle"
                 android:layout_width="match_parent"
-                android:layout_height="70dp"
+                android:layout_height="75dp"
                 android:text="Dedo 4"
-                app:strokeColor="#FDCE24" />
+                android:background="@drawable/custom_button"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"/>
 
             <Button
                 android:id="@+id/button10"
                 style="?attr/materialButtonOutlinedStyle"
                 android:layout_width="match_parent"
-                android:layout_height="70dp"
+                android:layout_height="75dp"
                 android:text="Dedo 5"
-                app:strokeColor="#FDCE24" />
+                android:background="@drawable/custom_button"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"/>
 
             <Button
                 android:id="@+id/button12"
                 style="?attr/materialButtonOutlinedStyle"
                 android:layout_width="match_parent"
-                android:layout_height="70dp"
+                android:layout_height="75dp"
                 android:text="Dedo 6"
-                app:strokeColor="#FDCE24" />
+                android:background="@drawable/custom_button"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"/>
 
         </LinearLayout>
     </LinearLayout>

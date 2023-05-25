@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "874250349689",
+    "project_id": "tim-vide",
+    "storage_bucket": "tim-vide.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:874250349689:android:5308fd8eaf4752a9ef78a8",
+        "android_client_info": {
+          "package_name": "com.example.tim_vide"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "874250349689-dbn20106stdh0tckhd105nicqfg6hot3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDhlaRpVBMTzPkIJn53UIynTsBl8Q-V_zU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "874250349689-dbn20106stdh0tckhd105nicqfg6hot3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
