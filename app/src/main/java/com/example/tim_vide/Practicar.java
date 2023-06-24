@@ -20,6 +20,7 @@ public class Practicar extends AppCompatActivity {
         ImageButton btn2 = findViewById(R.id.btnNumeros);
         ImageButton btn3 = findViewById(R.id.btnPalabras);
         ImageButton btn4 = findViewById(R.id.btnSignos);
+        ImageButton btn5 = findViewById(R.id.btnML);
 
 
         btn1.setOnClickListener(new View.OnClickListener(){
@@ -47,6 +48,13 @@ public class Practicar extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(Practicar.this, TecladoSign  .class);
+                startActivity(intent);
+            }
+        });
+        btn5.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Practicar.this, TecladoML.class);
                 startActivity(intent);
             }
         });

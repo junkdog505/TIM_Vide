@@ -27,6 +27,8 @@ public class TecladoNum extends AppCompatActivity {
     private Handler handler;
     private Runnable runnable;
     private String letra;
+    private Handler clearEditTextHandler;
+    private Runnable clearEditTextRunnable;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -212,7 +214,39 @@ public class TecladoNum extends AppCompatActivity {
     }
 
     private void updateEditText() {
-        editText.setText(inputStringBuilder.toString());
-        editText.setSelection(inputStringBuilder.length());
+        if (inputStringBuilder.length() > 0) {
+            editText.setText(String.valueOf(inputStringBuilder.charAt(0)));
+            editText.setSelection(1);
+            startClearEditTextTimer();
+        } else {
+            editText.setText("");
+            stopClearEditTextTimer();
+        }
+    }
+    private void startClearEditTextTimer() {
+        if (clearEditTextHandler == null) {
+            clearEditTextHandler = new Handler();
+            clearEditTextRunnable = new Runnable() {
+                @Override
+                public void run() {
+                    clearEditText();
+                    stopClearEditTextTimer();
+                }
+            };
+            clearEditTextHandler.postDelayed(clearEditTextRunnable, 1500);
+        }
+    }
+
+    private void stopClearEditTextTimer() {
+        if (clearEditTextHandler != null) {
+            clearEditTextHandler.removeCallbacks(clearEditTextRunnable);
+            clearEditTextHandler = null;
+            clearEditTextRunnable = null;
+        }
+    }
+
+    private void clearEditText() {
+        inputStringBuilder.setLength(0);
+        editText.setText("");
     }
 }

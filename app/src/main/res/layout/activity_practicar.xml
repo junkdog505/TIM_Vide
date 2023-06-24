@@ -24,8 +24,8 @@
 
     <ImageButton
         android:id="@+id/btnPalabras"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
         android:layout_marginTop="20dp"
         android:contentDescription="Practicar Palabras en Braille"
         android:background="@drawable/rounded_button"
@@ -37,8 +37,8 @@
 
     <ImageButton
         android:id="@+id/btnLetras"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
         android:layout_marginTop="20dp"
         android:contentDescription="Practicar Letras en Braille"
         android:background="@drawable/rounded_button"
@@ -50,8 +50,8 @@
 
     <ImageButton
         android:id="@+id/btnNumeros"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
         android:layout_marginTop="20dp"
         android:contentDescription="Practicar Númeross en Braille"
         android:background="@drawable/rounded_button"
@@ -63,8 +63,8 @@
 
     <ImageButton
         android:id="@+id/btnSignos"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
         android:layout_marginTop="16dp"
         android:contentDescription="Practicar Signos en Braille"
         android:background="@drawable/rounded_button"
@@ -77,7 +77,7 @@
     <TextView
         android:id="@+id/textView9"
         android:layout_width="200dp"
-        android:layout_height="150dp"
+        android:layout_height="120dp"
         android:layout_marginTop="20dp"
         android:gravity="center"
         android:text="Letras"
@@ -92,7 +92,7 @@
     <TextView
         android:id="@+id/textView10"
         android:layout_width="200dp"
-        android:layout_height="150dp"
+        android:layout_height="120dp"
         android:layout_marginTop="20dp"
         android:text="Números"
         android:textColor="#C5E063"
@@ -107,7 +107,7 @@
     <TextView
         android:id="@+id/textView11"
         android:layout_width="200dp"
-        android:layout_height="150dp"
+        android:layout_height="120dp"
         android:layout_marginTop="16dp"
         android:gravity="center"
         android:text="Signos de Gramática"
@@ -122,7 +122,7 @@
     <TextView
         android:id="@+id/textView12"
         android:layout_width="200dp"
-        android:layout_height="150dp"
+        android:layout_height="120dp"
         android:layout_marginTop="20dp"
         android:text="Palabras"
         android:textColor="#C5E063"
@@ -133,5 +133,33 @@
         app:layout_constraintHorizontal_bias="0.644"
         app:layout_constraintStart_toEndOf="@+id/btnPalabras"
         app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    <ImageButton
+        android:id="@+id/btnML"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded_button"
+        android:contentDescription="Practicar Palabras en Braille"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.068"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnPalabras"
+        app:srcCompat="@mipmap/ml_foreground" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="200dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Palabras con Machine Learning"
+        android:textColor="#C5E063"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.619"
+        app:layout_constraintStart_toEndOf="@+id/btnML"
+        app:layout_constraintTop_toBottomOf="@+id/textView12" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
