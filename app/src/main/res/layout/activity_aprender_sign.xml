@@ -15,160 +15,394 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
+
             <TextView
-                android:id="@+id/textView13"
+                android:id="@+id/textViewTitle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginBottom="25dp"
-                android:text="Signos en Braille"
+                android:padding="16dp"
+                android:text="Guía De Signos en Braille"
                 android:textColor="#C5E063"
-                android:textSize="35dp"
-                android:textStyle="bold"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                android:textSize="35sp"
+                android:textStyle="bold" />
 
-            <TextView
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="18dp"
-                android:layout_marginBottom="25dp"
-                android:layout_marginLeft="25dp"
-                android:layout_marginRight="25dp"
-                android:textColor="#c5e063"
-                android:text="El siguiente listado consiste los simbolos permitidos en el lenguaje Braille." />
+                android:orientation="horizontal">
 
-            <ImageView
-                android:id="@+id/imageView1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:srcCompat="@mipmap/punto_foreground" />
-            <ImageView
-                android:id="@+id/imageView2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:srcCompat="@mipmap/coma_foreground" />
-            <ImageView
-                android:id="@+id/imageView3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:srcCompat="@mipmap/puntocoma_foreground" />
-            <ImageView
-                android:id="@+id/imageView4"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:srcCompat="@mipmap/dospuntos_foreground" />
-            <ImageView
-                android:id="@+id/imageView5"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:srcCompat="@mipmap/slash_foreground" />
-            <ImageView
-                android:id="@+id/imageView6"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:srcCompat="@mipmap/interr_foreground" />
-            <ImageView
-                android:id="@+id/imageView7"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:srcCompat="@mipmap/exclama_foreground" />
-            <ImageView
-                android:id="@+id/imageView8"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:srcCompat="@mipmap/arroba_foreground" />
-            <ImageView
-                android:id="@+id/imageView9"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:srcCompat="@mipmap/michi_foreground" />
-            <ImageView
-                android:id="@+id/imageView10"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:srcCompat="@mipmap/mas_foreground"
-                android:layout_marginBottom="25dp"/>
-            <ImageView
-                android:id="@+id/imageView11"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:srcCompat="@mipmap/menos_foreground"
-                android:layout_marginBottom="25dp"/>
+                <ImageView
+                    android:id="@+id/imageView11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@mipmap/punto_foreground"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginRight="5dp"/>
 
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Punto: Se representa con un solo punto en la parte superior izquierda."
+                    android:layout_marginTop="25dp"
+                    android:justificationMode="inter_word"
+                    android:textColor="#C5E063"
+                    android:textSize="18dp"
+                    android:layout_marginRight="35dp"/>
 
-            <ImageView
-                android:id="@+id/imageView12"
+            </LinearLayout>
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:srcCompat="@mipmap/asterisco_foreground"
-                android:layout_marginBottom="25dp"/>
+                android:orientation="horizontal">
 
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@mipmap/coma_foreground"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginRight="5dp"/>
 
-            <ImageView
-                android:id="@+id/imageView13"
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Coma: Se representa con puntos en la parte inferior izquierda y derecha. "
+                    android:layout_marginTop="25dp"
+                    android:justificationMode="inter_word"
+                    android:textColor="#C5E063"
+                    android:textSize="18dp"
+                    android:layout_marginRight="35dp"/>
+            </LinearLayout>
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:srcCompat="@mipmap/comillase_foreground"
-                android:layout_marginBottom="25dp"/>
+                android:orientation="horizontal">
 
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@mipmap/puntocoma_foreground"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginRight="5dp"/>
 
-            <ImageView
-                android:id="@+id/imageView14"
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Punto y coma: Se representa con puntos en la parte inferior izquierda y en la parte superior derecha."
+                    android:layout_marginTop="25dp"
+                    android:justificationMode="inter_word"
+                    android:textColor="#C5E063"
+                    android:textSize="18dp"
+                    android:layout_marginRight="35dp"/>
+            </LinearLayout>
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:srcCompat="@mipmap/comillasc_foreground"
-                android:layout_marginBottom="25dp"/>
+                android:orientation="horizontal">
 
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@mipmap/dospuntos_foreground"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginRight="5dp"/>
 
-            <ImageView
-                android:id="@+id/imageView15"
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dos puntos: Se representa con puntos en la parte superior izquierda y derecha."
+                    android:layout_marginTop="25dp"
+                    android:justificationMode="inter_word"
+                    android:textColor="#C5E063"
+                    android:textSize="18dp"
+                    android:layout_marginRight="35dp"/>
+            </LinearLayout>
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:srcCompat="@mipmap/apostrofe_foreground"
-                android:layout_marginBottom="25dp"/>
+                android:orientation="horizontal">
 
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@mipmap/slash_foreground"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginRight="5dp"/>
 
-            <ImageView
-                android:id="@+id/imageView16"
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Barra: Se representa con un solo punto en la parte inferior izquierda."
+                    android:layout_marginTop="25dp"
+                    android:justificationMode="inter_word"
+                    android:textColor="#C5E063"
+                    android:textSize="18dp"
+                    android:layout_marginRight="35dp"/>
+            </LinearLayout>
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:srcCompat="@mipmap/parentesise_foreground"
-                android:layout_marginBottom="25dp"/>
-            <ImageView
-                android:id="@+id/imageView17"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:srcCompat="@mipmap/parentesisc_foreground"
-                android:layout_marginBottom="25dp"/>
-            <ImageView
-                android:id="@+id/imageView18"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:srcCompat="@mipmap/mayus_foreground"
-                android:layout_marginBottom="25dp"/>
-            <ImageView
-                android:id="@+id/imageView19"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:srcCompat="@mipmap/guion_foreground"
-                android:layout_marginBottom="25dp"/>
-            <ImageView
-                android:id="@+id/imageView20"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:srcCompat="@mipmap/letras_foreground"
-                android:layout_marginBottom="25dp"/>
-            <ImageView
-                android:id="@+id/imageView21"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:srcCompat="@mipmap/nums_foreground"
-                android:layout_marginBottom="25dp"/>
+                android:orientation="horizontal">
 
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@mipmap/interr_foreground"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginRight="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Signo de interrogación: Se representa con puntos en la parte inferior izquierda y superior derecha."
+                    android:layout_marginTop="25dp"
+                    android:justificationMode="inter_word"
+                    android:textColor="#C5E063"
+                    android:textSize="18dp"
+                    android:layout_marginRight="35dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@mipmap/exclama_foreground"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginRight="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Signo de exclamación: Se representa con puntos en la parte inferior izquierda y superior derecha."
+                    android:layout_marginTop="25dp"
+                    android:justificationMode="inter_word"
+                    android:textColor="#C5E063"
+                    android:textSize="18dp"
+                    android:layout_marginRight="35dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@mipmap/arroba_foreground"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginRight="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Arroba: Se representa con puntos en las dos columnas centrales y el punto inferior izquierdo."
+                    android:layout_marginTop="25dp"
+                    android:justificationMode="inter_word"
+                    android:textColor="#C5E063"
+                    android:textSize="18dp"
+                    android:layout_marginRight="35dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@mipmap/michi_foreground"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginRight="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hashtag: Se representa con puntos en las dos columnas centrales y el punto inferior derecho."
+                    android:layout_marginTop="25dp"
+                    android:justificationMode="inter_word"
+                    android:textColor="#C5E063"
+                    android:textSize="18dp"
+                    android:layout_marginRight="35dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="25dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@mipmap/mas_foreground"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginRight="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Signo de más: Se representa con puntos en las dos columnas centrales y en la parte inferior central."
+                    android:layout_marginTop="25dp"
+                    android:justificationMode="inter_word"
+                    android:textColor="#C5E063"
+                    android:textSize="18dp"
+                    android:layout_marginRight="35dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="25dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@mipmap/menos_foreground"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginRight="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Signo de menos: Se representa con puntos en las dos columnas centrales y en la parte inferior central."
+                    android:layout_marginTop="25dp"
+                    android:justificationMode="inter_word"
+                    android:textColor="#C5E063"
+                    android:textSize="18dp"
+                    android:layout_marginRight="35dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="25dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@mipmap/asterisco_foreground"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginRight="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Asterisco: Se representa con puntos en las dos columnas centrales y en la parte inferior izquierda."
+                    android:layout_marginTop="25dp"
+                    android:justificationMode="inter_word"
+                    android:textColor="#C5E063"
+                    android:textSize="18dp"
+                    android:layout_marginRight="35dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="25dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@mipmap/comillase_foreground"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginRight="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Comillas dobles abiertas: Se representa con puntos en las dos columnas centrales y en la parte inferior derecha."
+                    android:layout_marginTop="25dp"
+                    android:justificationMode="inter_word"
+                    android:textColor="#C5E063"
+                    android:textSize="18dp"
+                    android:layout_marginRight="35dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="25dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@mipmap/comillasc_foreground"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginRight="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Comillas dobles cerradas: Se representa con puntos en las dos columnas centrales y en la parte inferior izquierda y derecha."
+                    android:layout_marginTop="25dp"
+                    android:justificationMode="inter_word"
+                    android:textColor="#C5E063"
+                    android:textSize="18dp"
+                    android:layout_marginRight="35dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="25dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@mipmap/parentesise_foreground"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginRight="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Paréntesis abierto: Se representa con puntos en las dos columnas centrales y en la parte inferior izquierda."
+                    android:layout_marginTop="25dp"
+                    android:justificationMode="inter_word"
+                    android:textColor="#C5E063"
+                    android:textSize="18dp"
+                    android:layout_marginRight="35dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="25dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@mipmap/parentesisc_foreground"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginRight="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Paréntesis cerrado: Se representa con puntos en las dos columnas centrales y en la parte inferior derecha."
+                    android:layout_marginTop="25dp"
+                    android:justificationMode="inter_word"
+                    android:textColor="#C5E063"
+                    android:textSize="18dp"
+                    android:layout_marginRight="35dp"/>
+            </LinearLayout>
         </LinearLayout>
     </ScrollView>
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>

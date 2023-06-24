@@ -9,7 +9,7 @@
 
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btnGuia"
         android:layout_width="154dp"
         android:layout_height="51dp"
         android:layout_marginTop="16dp"
@@ -49,10 +49,10 @@
         android:ems="10"
         android:focusable="false"
         android:gravity="center"
-        android:inputType="text"
+        android:inputType="textMultiLine"
         android:textColor="#c5e063"
         android:textColorHint="#ADBA7E"
-        android:textSize="60dp"
+        android:textSize="60sp"
         android:hint=":)"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

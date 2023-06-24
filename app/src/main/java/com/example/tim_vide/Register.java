@@ -3,9 +3,7 @@ package com.example.tim_vide;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.ContentValues;
 import android.content.Intent;
-import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -19,10 +17,10 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.FirebaseFirestoreSettings;
 
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Objects;
 
 public class Register extends AppCompatActivity {
     Button btn_register;
@@ -31,7 +29,7 @@ public class Register extends AppCompatActivity {
     FirebaseAuth mAuth;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState){
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
         mFirestore = FirebaseFirestore.getInstance();
@@ -47,96 +45,81 @@ public class Register extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 String nameUser = name.getText().toString().trim();
-                String lastNameUser = last_name.getText().toString().toString();
+                String lastNameUser = last_name.getText().toString().trim();
                 String emailUser = email.getText().toString().trim();
                 String passUser = password.getText().toString().trim();
 
-                if(nameUser.isEmpty() && emailUser.isEmpty() && passUser.isEmpty()){
-                    Toast.makeText(Register.this, "Rellene los datos", Toast.LENGTH_SHORT).show();
-                }else{
+                if (nameUser.isEmpty() || lastNameUser.isEmpty() || emailUser.isEmpty() || passUser.isEmpty()) {
+                    Toast.makeText(Register.this, "Rellene todos los campos", Toast.LENGTH_SHORT).show();
+                } else if (!isEmailValid(emailUser)) {
+                    Toast.makeText(Register.this, "Ingrese un correo electrónico válido", Toast.LENGTH_SHORT).show();
+                } else if (!isPasswordValid(passUser)) {
+                    Toast.makeText(Register.this, "La contraseña debe contener al menos 8 caracteres y incluir números y letras", Toast.LENGTH_SHORT).show();
+                } else {
                     registerUser(nameUser, lastNameUser, emailUser, passUser);
                 }
+            }
+
+            private boolean isEmailValid(String email) {
+                // Expresión regular para validar el correo electrónico
+                String emailRegex = "^[A-Za-z0-9+_.-]+@[A-Za-z0-9.-]+$";
+                return email.matches(emailRegex);
+            }
+
+            private boolean isPasswordValid(String password) {
+                // Expresión regular para validar la contraseña (al menos 8 caracteres, incluyendo números y letras)
+                String passwordRegex = "^(?=.*[A-Za-z])(?=.*\\d)[A-Za-z\\d]{8,}$";
+                return password.matches(passwordRegex);
             }
 
             private void registerUser(String nameUser, String lastNameUser, String emailUser, String passUser) {
                 mAuth.createUserWithEmailAndPassword(emailUser, passUser).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
-                        Map<String, Object> map = new HashMap<>();
-                        String id = mAuth.getCurrentUser().getUid();
-                        map.put("id", id);
-                        map.put("name", nameUser);
-                        map.put("last_name", lastNameUser);
-                        map.put("email", emailUser);
-                        map.put("password", passUser);
+                        if (task.isSuccessful()) {
+                            String id = mAuth.getCurrentUser().getUid();
 
-                        mFirestore.collection("user").document(id).set(map).addOnSuccessListener(new OnSuccessListener<Void>() {
-                            @Override
-                            public void onSuccess(Void unused) {
-                                finish();
-                                startActivity(new Intent(Register.this, MainActivity.class));
-                                Toast.makeText(Register.this, "Registro completado", Toast.LENGTH_SHORT).show();
-                            }
-                        }).addOnSuccessListener(new OnSuccessListener<Void>() {
-                            @Override
-                            public void onSuccess(Void unused) {
-                                Toast.makeText(Register.this, "Error al registrar", Toast.LENGTH_SHORT).show();
-                            }
-                        });
+                            // Crear un mapa con los datos del usuario
+                            Map<String, Object> map = new HashMap<>();
+                            map.put("id", id);
+                            map.put("name", nameUser);
+                            map.put("last_name", lastNameUser);
+                            map.put("email", emailUser);
+                            map.put("password", passUser);
 
+                            // Configurar las opciones de Firestore para habilitar el almacenamiento en caché
+                            FirebaseFirestoreSettings settings = new FirebaseFirestoreSettings.Builder()
+                                    .setPersistenceEnabled(true)
+                                    .build();
+                            mFirestore.setFirestoreSettings(settings);
 
-                        Toast.makeText(Register.this, "Registrado correctamente", Toast.LENGTH_SHORT).show();
-                    }
-                }).addOnFailureListener(new OnFailureListener() {
-                    @Override
-                    public void onFailure(@NonNull Exception e) {
-                        Toast.makeText(Register.this, "Error al registrar", Toast.LENGTH_SHORT).show();
+                            // Guardar los datos del usuario en Firestore
+                            mFirestore.collection("user").document(id).set(map)
+                                    .addOnSuccessListener(new OnSuccessListener<Void>() {
+                                        @Override
+                                        public void onSuccess(Void unused) {
+                                            // Datos guardados exitosamente
+
+                                            // Redirigir al usuario a la actividad principal
+                                            finish();
+                                            startActivity(new Intent(Register.this, Login.class));
+                                            Toast.makeText(Register.this, "Registro completado", Toast.LENGTH_SHORT).show();
+                                        }
+                                    })
+                                    .addOnFailureListener(new OnFailureListener() {
+                                        @Override
+                                        public void onFailure(@NonNull Exception e) {
+                                            // Error al guardar los datos en Firestore
+                                            Toast.makeText(Register.this, "Error al registrar (Firestore)", Toast.LENGTH_SHORT).show();
+                                        }
+                                    });
+                        } else {
+                            // Error al registrar el usuario
+                            Toast.makeText(Register.this, "Error al registrar (Usuario)", Toast.LENGTH_SHORT).show();
+                        }
                     }
                 });
             }
         });
     }
 }
-    /*private EditText et_nombre, et_apellido, et_correo, et_contrasena;
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_register);
-
-        et_nombre = (EditText) findViewById(R.id.name);
-        et_apellido = (EditText) findViewById(R.id.lastname);
-        et_correo = (EditText) findViewById(R.id.username);
-        et_contrasena = (EditText) findViewById(R.id.password);
-    }
-
-    public void RegistrarUsuario(View view){
-        AdminSQLiteOpenHelper admin= new AdminSQLiteOpenHelper(this, "usuarios", null, 1);
-        SQLiteDatabase BaseDeDatos = admin.getWritableDatabase();
-
-        String nombre = et_nombre.getText().toString();
-        String apellido = et_apellido.getText().toString();
-        String correo = et_correo.getText().toString();
-        String contrasena = et_contrasena.getText().toString();
-
-        if(!nombre.isEmpty() && !apellido.isEmpty() && !correo.isEmpty() && !contrasena.isEmpty()) {
-            ContentValues registro = new ContentValues();
-
-            registro.put("nombre", nombre);
-            registro.put("apellido", apellido);
-            registro.put("correo", correo);
-            registro.put("contrasena", contrasena);
-
-            BaseDeDatos.insert("usuario", null, registro);
-            BaseDeDatos.close();
-            et_nombre.setText("");
-            et_apellido.setText("");
-            et_correo.setText("");
-            et_contrasena.setText("");
-
-            Toast.makeText(this, "Usuario registrado exitosamente", Toast.LENGTH_SHORT).show();
-        }else{
-            Toast.makeText(this, "Debe llenar todos los campos", Toast.LENGTH_SHORT).show();
-
-        }
-    }*/

@@ -1,5 +1,6 @@
 package com.example.tim_vide;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Vibrator;
@@ -12,7 +13,7 @@ import androidx.appcompat.app.AppCompatActivity;
 public class Teclado extends AppCompatActivity {
 
     private StringBuilder inputStringBuilder;
-    private Button btnD1, btnD2, btnD3, btnD4, btnD5, btnD6;
+    private Button btnD1, btnD2, btnD3, btnD4, btnD5, btnD6, btnGuia;
     private EditText editText;
     private Vibrator vibrator;
 
@@ -45,6 +46,7 @@ public class Teclado extends AppCompatActivity {
         btnD4 = findViewById(R.id.btn_d4);
         btnD5 = findViewById(R.id.btn_d5);
         btnD6 = findViewById(R.id.btn_d6);
+        btnGuia = findViewById(R.id.btnGuia);
 
         editText = findViewById(R.id.escribirP);
 
@@ -145,7 +147,13 @@ public class Teclado extends AppCompatActivity {
                 return true;
             }
         });
-
+        btnGuia.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Teclado.this, GuiaLetras.class);
+                startActivity(intent);
+            }
+        });
     }
     private void vibrate() {
         if (vibrator != null && vibrator.hasVibrator()) {

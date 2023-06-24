@@ -81,6 +81,7 @@
         android:layout_height="305dp"
         android:layout_marginTop="15dp"
         android:orientation="vertical"
+        android:background="@drawable/rounded_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView8">
@@ -89,9 +90,14 @@
             android:id="@+id/textView7"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
             android:justificationMode="inter_word"
             android:text="El Braille es un sistema de escritura táctil desarrollado por Louis Braille en el siglo XIX. Está diseñado para permitir a las personas ciegas o con discapacidad visual leer y escribir mediante el tacto. Consiste en la combinación de puntos en relieve dispuestos en celdas o matrices, donde cada combinación representa letras, números y símbolos. Los lectores de Braille pasan sus dedos sobre el texto, reconociendo las configuraciones de puntos para interpretar el contenido. El Braille es una herramienta fundamental para la comunicación y la educación de las personas con discapacidad visual, brindando acceso a la información y promoviendo la igualdad de oportunidades."
-            android:textColor="#A1CCA5"
+            android:textColor="#507255"
+            android:textStyle="bold"
             android:textSize="16dp" />
     </LinearLayout>
 
@@ -101,7 +107,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:gravity="center"
-        android:text="Un poco de . . ."
+        android:text="Acerca de . . ."
         android:textColor="#C5E063"
         android:textSize="25dp"
         android:textStyle="bold"
@@ -109,6 +115,18 @@
         app:layout_constraintHorizontal_bias="0.081"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/cerrarSesion"
+        android:layout_width="120dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/rounded_button"
+        android:text="Cerrar Sesión"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

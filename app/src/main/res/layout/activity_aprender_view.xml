@@ -23,156 +23,720 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="16dp"
                 android:layout_marginBottom="25dp"
-                android:text="Abecedario en Braille"
+                android:text="Guía del Abecedario en Braille"
                 android:textColor="#C5E063"
                 android:textSize="35dp"
                 android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
-            <TextView
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="18dp"
-                android:layout_marginBottom="25dp"
-                android:layout_marginLeft="25dp"
-                android:layout_marginRight="25dp"
-                android:textColor="#c5e063"
-                android:text="El siguiente listado consta de las 26 letras que contiene el abecedario global." />
+                android:orientation="vertical">
 
-            <ImageView
-                android:id="@+id/imageView1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:srcCompat="@mipmap/a_foreground" />
-            <ImageView
-                android:id="@+id/imageView2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:srcCompat="@mipmap/b_foreground" />
-            <ImageView
-                android:id="@+id/imageView3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:srcCompat="@mipmap/c_foreground" />
-            <ImageView
-                android:id="@+id/imageView4"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:srcCompat="@mipmap/d_foreground" />
-            <ImageView
-                android:id="@+id/imageView5"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:srcCompat="@mipmap/e_foreground" />
-            <ImageView
-                android:id="@+id/imageView6"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:srcCompat="@mipmap/f_foreground" />
-            <ImageView
-                android:id="@+id/imageView7"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:srcCompat="@mipmap/g_foreground" />
-            <ImageView
-                android:id="@+id/imageView8"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:srcCompat="@mipmap/h_foreground" />
-            <ImageView
-                android:id="@+id/imageView9"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:srcCompat="@mipmap/i_foreground" />
-            <ImageView
-                android:id="@+id/imageView10"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:srcCompat="@mipmap/j_foreground" />
-            <ImageView
-                android:id="@+id/imageView11"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:srcCompat="@mipmap/k_foreground" />
-            <ImageView
-                android:id="@+id/imageView12"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:srcCompat="@mipmap/l_foreground" />
-            <ImageView
-                android:id="@+id/imageView13"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:srcCompat="@mipmap/m_foreground" />
-            <ImageView
-                android:id="@+id/imageView14"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:srcCompat="@mipmap/n_foreground" />
-            <ImageView
-                android:id="@+id/imageView15"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:srcCompat="@mipmap/o_foreground" />
-            <ImageView
-                android:id="@+id/imageView16"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:srcCompat="@mipmap/p_foreground" />
-            <ImageView
-                android:id="@+id/imageView17"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:srcCompat="@mipmap/q_foreground" />
-            <ImageView
-                android:id="@+id/imageView18"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:srcCompat="@mipmap/r_foreground" />
-            <ImageView
-                android:id="@+id/imageView19"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:srcCompat="@mipmap/s_foreground" />
-            <ImageView
-                android:id="@+id/imageView20"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:srcCompat="@mipmap/t_foreground" />
-            <ImageView
-                android:id="@+id/imageView21"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:srcCompat="@mipmap/u_foreground" />
-            <ImageView
-                android:id="@+id/imageView22"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:srcCompat="@mipmap/v_foreground" />
-            <ImageView
-                android:id="@+id/imageVie23"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:srcCompat="@mipmap/w_foreground" />
-            <ImageView
-                android:id="@+id/imageView24"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:srcCompat="@mipmap/x_foreground" />
-            <ImageView
-                android:id="@+id/imageView25"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:srcCompat="@mipmap/y_foreground" />
-            <ImageView
-                android:id="@+id/imageView26"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:srcCompat="@mipmap/z_foreground"
-                android:layout_marginBottom="25dp"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
 
+                    <ImageView
+                        android:id="@+id/imageView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@mipmap/a_foreground"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="35dp"
+                        android:layout_marginRight="5dp"/>
 
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="A: Representada por el punto en la columna izquierda superior."
+                        android:layout_marginTop="25dp"
+                                    android:justificationMode="inter_word"
+
+                        android:textColor="#C5E063"
+                        android:textSize="18dp"
+                        android:layout_marginRight="35dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@mipmap/b_foreground"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginLeft="35dp"
+                        android:layout_marginRight="5dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="B: Representada por puntos en las columnas izquierda superior y central superior."
+                        android:layout_marginTop="25dp"
+                                    android:justificationMode="inter_word"
+
+                        android:textColor="#C5E063"
+                        android:textSize="18dp"
+                        android:layout_marginRight="35dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@mipmap/c_foreground"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginLeft="35dp"
+                        android:layout_marginRight="5dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="C: Representada por puntos en las columnas izquierda superior y central."
+                        android:layout_marginTop="25dp"
+                                    android:justificationMode="inter_word"
+
+                        android:textColor="#C5E063"
+                        android:textSize="18dp"
+                        android:layout_marginRight="35dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@mipmap/d_foreground"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginLeft="35dp"
+                        android:layout_marginRight="5dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="D: Representada por puntos en las columnas izquierda superior y central inferior."
+                        android:layout_marginTop="25dp"
+                                    android:justificationMode="inter_word"
+
+                        android:textColor="#C5E063"
+                        android:textSize="18dp"
+                        android:layout_marginRight="35dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@mipmap/e_foreground"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginLeft="35dp"
+                        android:layout_marginRight="5dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="E: Representada por puntos en las columnas izquierda superior, derecha superior y central superior."
+                        android:layout_marginTop="25dp"
+                                    android:justificationMode="inter_word"
+
+                        android:textColor="#C5E063"
+                        android:textSize="18dp"
+                        android:layout_marginRight="35dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@mipmap/f_foreground"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginLeft="35dp"
+                        android:layout_marginRight="5dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="F: Representada por puntos en las columnas izquierda superior, derecha superior, central superior y central inferior."
+                        android:layout_marginTop="25dp"
+                                    android:justificationMode="inter_word"
+
+                        android:textColor="#C5E063"
+                        android:textSize="18dp"
+                        android:layout_marginRight="35dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@mipmap/g_foreground"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginLeft="35dp"
+                        android:layout_marginRight="5dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="G: Representada por puntos en las columnas izquierda superior, derecha superior, izquierda central, derecha central y central inferior."
+                        android:layout_marginTop="25dp"
+                                    android:justificationMode="inter_word"
+
+                        android:textColor="#C5E063"
+                        android:textSize="18dp"
+                        android:layout_marginRight="35dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@mipmap/h_foreground"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginLeft="35dp"
+                        android:layout_marginRight="5dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="H: Representada por puntos en las columnas izquierda superior, derecha superior, izquierda central y derecha central."
+                        android:layout_marginTop="25dp"
+                                    android:justificationMode="inter_word"
+
+                        android:textColor="#C5E063"
+                        android:textSize="18dp"
+                        android:layout_marginRight="35dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@mipmap/i_foreground"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginLeft="35dp"
+                        android:layout_marginRight="5dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="I: Representada por puntos en las columnas derecha superior y derecha central."
+                        android:layout_marginTop="25dp"
+                                    android:justificationMode="inter_word"
+
+                        android:textColor="#C5E063"
+                        android:textSize="18dp"
+                        android:layout_marginRight="35dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@mipmap/j_foreground"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginLeft="35dp"
+                        android:layout_marginRight="5dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="J: Representada por puntos en las columnas izquierda central, derecha central y central inferior."
+                        android:layout_marginTop="25dp"
+                                    android:justificationMode="inter_word"
+
+                        android:textColor="#C5E063"
+                        android:textSize="18dp"
+                        android:layout_marginRight="35dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@mipmap/k_foreground"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginLeft="35dp"
+                        android:layout_marginRight="5dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="K: Representada por puntos en las columnas izquierda superior, izquierda central y derecha central."
+                        android:layout_marginTop="25dp"
+                                    android:justificationMode="inter_word"
+
+                        android:textColor="#C5E063"
+                        android:textSize="18dp"
+                        android:layout_marginRight="35dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@mipmap/l_foreground"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginLeft="35dp"
+                        android:layout_marginRight="5dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="L: Representada por puntos en las columnas izquierda superior, izquierda central, derecha central y central inferior."
+                        android:layout_marginTop="25dp"
+                                    android:justificationMode="inter_word"
+
+                        android:textColor="#C5E063"
+                        android:textSize="18dp"
+                        android:layout_marginRight="35dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@mipmap/m_foreground"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginLeft="35dp"
+                        android:layout_marginRight="5dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="M: Representada por puntos en las columnas izquierda superior, derecha superior, izquierda central y derecha central."
+                        android:layout_marginTop="25dp"
+                                    android:justificationMode="inter_word"
+
+                        android:textColor="#C5E063"
+                        android:textSize="18dp"
+                        android:layout_marginRight="35dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@mipmap/n_foreground"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginLeft="35dp"
+                        android:layout_marginRight="5dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="N: Representada por puntos en las columnas izquierda superior, derecha superior, izquierda central, derecha central y central inferior."
+                        android:layout_marginTop="25dp"
+                                    android:justificationMode="inter_word"
+
+                        android:textColor="#C5E063"
+                        android:textSize="18dp"
+                        android:layout_marginRight="35dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@mipmap/o_foreground"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginLeft="35dp"
+                        android:layout_marginRight="5dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="O: Representada por puntos en las columnas izquierda superior, derecha superior, izquierda central, derecha central y central inferior."
+                        android:layout_marginTop="25dp"
+                                    android:justificationMode="inter_word"
+
+                        android:textColor="#C5E063"
+                        android:textSize="18dp"
+                        android:layout_marginRight="35dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@mipmap/p_foreground"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginLeft="35dp"
+                        android:layout_marginRight="5dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="P: Representada por puntos en las columnas izquierda superior, derecha superior, izquierda central, derecha central y central inferior."
+                        android:layout_marginTop="25dp"
+                                    android:justificationMode="inter_word"
+
+                        android:textColor="#C5E063"
+                        android:textSize="18dp"
+                        android:layout_marginRight="35dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView17"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@mipmap/q_foreground"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginLeft="35dp"
+                        android:layout_marginRight="5dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Q: Representada por puntos en las columnas izquierda superior, derecha superior, izquierda central, derecha central y central inferior."
+                        android:layout_marginTop="25dp"
+                                    android:justificationMode="inter_word"
+
+                        android:textColor="#C5E063"
+                        android:textSize="18dp"
+                        android:layout_marginRight="35dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@mipmap/r_foreground"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginLeft="35dp"
+                        android:layout_marginRight="5dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="R: Representada por puntos en las columnas izquierda superior, derecha superior, izquierda central, derecha central y central inferior."
+                        android:layout_marginTop="25dp"
+                                    android:justificationMode="inter_word"
+
+                        android:textColor="#C5E063"
+                        android:textSize="18dp"
+                        android:layout_marginRight="35dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView19"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@mipmap/s_foreground"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginLeft="35dp"
+                        android:layout_marginRight="5dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="S: Representada por puntos en las columnas izquierda superior, derecha superior, izquierda central, derecha central y central inferior."
+                        android:layout_marginTop="25dp"
+                                    android:justificationMode="inter_word"
+
+                        android:textColor="#C5E063"
+                        android:textSize="18dp"
+                        android:layout_marginRight="35dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView20"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@mipmap/t_foreground"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginLeft="35dp"
+                        android:layout_marginRight="5dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="T: Representada por puntos en las columnas izquierda superior, derecha superior, izquierda central, derecha central y central inferior."
+                        android:layout_marginTop="25dp"
+                                    android:justificationMode="inter_word"
+
+                        android:textColor="#C5E063"
+                        android:textSize="18dp"
+                        android:layout_marginRight="35dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView21"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@mipmap/u_foreground"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginLeft="35dp"
+                        android:layout_marginRight="5dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="U: Representada por puntos en las columnas izquierda superior, derecha superior, izquierda central y derecha central."
+                        android:layout_marginTop="25dp"
+                                    android:justificationMode="inter_word"
+
+                        android:textColor="#C5E063"
+                        android:textSize="18dp"
+                        android:layout_marginRight="35dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView22"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@mipmap/v_foreground"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginLeft="35dp"
+                        android:layout_marginRight="5dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="V: Representada por puntos en las columnas izquierda superior, derecha superior, izquierda central y derecha central."
+                        android:layout_marginTop="25dp"
+                                    android:justificationMode="inter_word"
+
+                        android:textColor="#C5E063"
+                        android:textSize="18dp"
+                        android:layout_marginRight="35dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView23"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@mipmap/w_foreground"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginLeft="35dp"
+                        android:layout_marginRight="5dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="W: Representada por puntos en las columnas izquierda superior, derecha superior, izquierda central y derecha central."
+                        android:layout_marginTop="25dp"
+                                    android:justificationMode="inter_word"
+
+                        android:textColor="#C5E063"
+                        android:textSize="18dp"
+                        android:layout_marginRight="35dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView24"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@mipmap/x_foreground"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginLeft="35dp"
+                        android:layout_marginRight="5dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="X: Representada por puntos en las columnas izquierda superior, derecha superior, izquierda central y derecha central."
+                        android:layout_marginTop="25dp"
+                                    android:justificationMode="inter_word"
+
+                        android:textColor="#C5E063"
+                        android:textSize="18dp"
+                        android:layout_marginRight="35dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView25"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@mipmap/y_foreground"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginLeft="35dp"
+                        android:layout_marginRight="5dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Y: Representada por puntos en las columnas izquierda superior, derecha superior, izquierda central, derecha central y central inferior."
+                        android:layout_marginTop="25dp"
+                                    android:justificationMode="inter_word"
+
+                        android:textColor="#C5E063"
+                        android:textSize="18dp"
+                        android:layout_marginRight="35dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="35dp">
+
+                    <ImageView
+                        android:id="@+id/imageView26"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@mipmap/z_foreground"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginLeft="35dp"
+                        android:layout_marginRight="5dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Z: Representada por puntos en las columnas izquierda superior, derecha superior, izquierda central, derecha central y central inferior."
+                        android:layout_marginTop="25dp"
+                                    android:justificationMode="inter_word"
+
+                        android:textColor="#C5E063"
+                        android:textSize="18dp"
+                        android:layout_marginRight="35dp"/>
+                </LinearLayout>
+            </LinearLayout>
         </LinearLayout>
     </ScrollView>
 

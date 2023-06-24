@@ -9,6 +9,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 
+import com.google.firebase.auth.FirebaseAuth;
+
 public class Home extends AppCompatActivity {
 
     @Override
@@ -18,6 +20,7 @@ public class Home extends AppCompatActivity {
         setContentView(R.layout.activity_home);
         ImageButton btn1 = findViewById(R.id.btnAprender);
         ImageButton btn2 = findViewById(R.id.btnPracticar);
+        Button btnLogOut = findViewById(R.id.cerrarSesion);
 
         btn1.setOnClickListener(new View.OnClickListener(){
             @Override
@@ -33,5 +36,16 @@ public class Home extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        btnLogOut.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                FirebaseAuth.getInstance().signOut();
+                Intent intent = new Intent(Home.this, Login.class);
+                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                startActivity(intent);
+                finish();
+            }
+        });
+
     }
 }
