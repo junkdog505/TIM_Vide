@@ -1,7 +1,5 @@
 package com.example.tim_vide;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Vibrator;
@@ -10,9 +8,11 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+import androidx.appcompat.app.AppCompatActivity;
 public class TecladoSign extends AppCompatActivity {
+
     private StringBuilder inputStringBuilder;
-    private Button btnD1, btnD2, btnD3, btnD4, btnD5, btnD6, borrar;
+    private Button btnD1, btnD2, btnD3, btnD4, btnD5, btnD6;
     private EditText editText;
     private Vibrator vibrator;
 
@@ -27,13 +27,15 @@ public class TecladoSign extends AppCompatActivity {
     private Handler handler;
     private Runnable runnable;
     private String letra;
+    private Handler clearEditTextHandler;
+    private Runnable clearEditTextRunnable;
+
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_teclado_sign);
-
 
         inputStringBuilder = new StringBuilder();
         vibrator = (Vibrator) getSystemService(VIBRATOR_SERVICE);
@@ -45,6 +47,7 @@ public class TecladoSign extends AppCompatActivity {
         btnD6 = findViewById(R.id.btn_d6);
 
         editText = findViewById(R.id.escribirP);
+
         btnD1.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
@@ -162,28 +165,22 @@ public class TecladoSign extends AppCompatActivity {
             letra = ";";
         }else if(!btnD1Pressed && btnD2Pressed  && !btnD3Pressed && !btnD4Pressed && btnD5Pressed && !btnD6Pressed){
             combinationPressed = true;
-            letra = ":";
+            letra = ": ó -";
         }else if(!btnD1Pressed && !btnD2Pressed  && btnD3Pressed && btnD4Pressed && !btnD5Pressed && !btnD6Pressed){
             combinationPressed = true;
             letra = "/";
         }else if(!btnD1Pressed && btnD2Pressed  && btnD3Pressed && !btnD4Pressed && !btnD5Pressed && btnD6Pressed){
             combinationPressed = true;
-            letra = "?";
+            letra = "? ó “";
         }else if(!btnD1Pressed && btnD2Pressed  && btnD3Pressed && !btnD4Pressed && btnD5Pressed && !btnD6Pressed){
             combinationPressed = true;
-            letra = "!";
+            letra = "! ó +";
         }else if(!btnD1Pressed && !btnD2Pressed  && btnD3Pressed && btnD4Pressed && btnD5Pressed && !btnD6Pressed){
             combinationPressed = true;
             letra = "@";
         }else if(!btnD1Pressed && !btnD2Pressed  && btnD3Pressed && btnD4Pressed && btnD5Pressed && btnD6Pressed){
             combinationPressed = true;
             letra = "#";
-        }else if(!btnD1Pressed && btnD2Pressed  && btnD3Pressed && !btnD4Pressed && btnD5Pressed && !btnD6Pressed){
-            combinationPressed = true;
-            letra = "+";
-        }else if(!btnD1Pressed && btnD2Pressed  && !btnD3Pressed && !btnD4Pressed && btnD5Pressed && !btnD6Pressed){
-            combinationPressed = true;
-            letra = "-";
         }else if(!btnD1Pressed && !btnD2Pressed  && btnD3Pressed && !btnD4Pressed && btnD5Pressed && !btnD6Pressed){
             combinationPressed = true;
             letra = "*";
@@ -231,7 +228,43 @@ public class TecladoSign extends AppCompatActivity {
     }
 
     private void updateEditText() {
-        editText.setText(inputStringBuilder.toString());
-        editText.setSelection(inputStringBuilder.length());
+        if (inputStringBuilder.length() > 0) {
+            editText.setText(letra);
+            editText.setSelection(letra.length());
+            startClearEditTextTimer();
+        } else {
+            editText.setText("");
+            stopClearEditTextTimer();
+        }
     }
+
+
+    private void startClearEditTextTimer() {
+        if (clearEditTextHandler == null) {
+            clearEditTextHandler = new Handler();
+            clearEditTextRunnable = new Runnable() {
+                @Override
+                public void run() {
+                    clearEditText();
+                    stopClearEditTextTimer();
+                }
+            };
+            clearEditTextHandler.postDelayed(clearEditTextRunnable, 1500);
+        }
+    }
+
+    private void stopClearEditTextTimer() {
+        if (clearEditTextHandler != null) {
+            clearEditTextHandler.removeCallbacks(clearEditTextRunnable);
+            clearEditTextHandler = null;
+            clearEditTextRunnable = null;
+        }
+    }
+
+    private void clearEditText() {
+        inputStringBuilder.setLength(0);
+        editText.setText("");
+    }
+
+
 }
