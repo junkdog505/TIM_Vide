@@ -34,5 +34,12 @@ public class MenuAprender extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        btn3.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MenuAprender.this, AprenderSign.class);
+                startActivity(intent);
+            }
+        });
     }
 }
