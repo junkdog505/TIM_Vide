@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Practicar"
+    android:background="#507255">
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="250dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Aprender"
+        android:textColor="#C5E063"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btnLetras"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="88dp"
+        android:background="@drawable/rounded_button"
+        android:contentDescription="Aprender Letras en Braille"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.076"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:srcCompat="@mipmap/word_foreground" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:text="Números"
+        android:textColor="#C5E063"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.644"
+        app:layout_constraintStart_toEndOf="@+id/btnNumeros"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="88dp"
+        android:gravity="center"
+        android:text="Letras"
+        android:textColor="#C5E063"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.609"
+        app:layout_constraintStart_toEndOf="@+id/btnLetras"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:text="Signos de Gramática"
+        android:textColor="#C5E063"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.644"
+        app:layout_constraintStart_toEndOf="@+id/btnSignos"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <ImageButton
+        android:id="@+id/btnSignos"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/rounded_button"
+        android:contentDescription="Aprender Signos en Braille"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.061"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnNumeros"
+        app:srcCompat="@mipmap/signals_foreground" />
+
+    <ImageButton
+        android:id="@+id/btnNumeros"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/rounded_button"
+        android:contentDescription="Aprender Númeross en Braille"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.061"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnLetras"
+        app:srcCompat="@mipmap/numbers_foreground" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

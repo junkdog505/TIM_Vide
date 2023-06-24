@@ -14,6 +14,12 @@
         android:theme="@style/AppTheme.NoActionBar"
         tools:targetApi="31">
         <activity
+            android:name=".MenuAprender"
+            android:exported="false" />
+        <activity
+            android:name=".AprenderNums"
+            android:exported="false" />
+        <activity
             android:name=".TecladoPalabras"
             android:exported="false"
             android:screenOrientation="landscape" />

@@ -28,7 +28,7 @@
     <EditText
         android:id="@+id/escribirP"
         android:layout_width="280dp"
-        android:layout_height="wrap_content"
+        android:layout_height="240dp"
         android:layout_marginStart="300dp"
         android:layout_marginTop="120dp"
         android:backgroundTint="#c5e063"
