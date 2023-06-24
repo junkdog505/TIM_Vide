@@ -5,123 +5,151 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Teclado"
-    android:background="#07224f">
-
-    <Button
-        android:id="@+id/button1"
-        android:layout_width="150dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="16dp"
-        android:background="@drawable/custom_button"
-        android:text="Siguiente"
-        android:textAllCaps="false"
-        android:textSize="15sp"
-        app:backgroundTint="@null"
-        app:cornerRadius="25dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.904"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    android:background="#507255">
 
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="150dp"
-        android:layout_height="40dp"
+        android:layout_width="154dp"
+        android:layout_height="51dp"
         android:layout_marginTop="16dp"
-        android:background="@drawable/custom_button"
-        android:text="Ayuda"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/rounded_button"
+        android:text="Guía"
         android:textAllCaps="false"
-        android:textSize="15sp"
+        android:textSize="20sp"
         app:backgroundTint="@null"
         app:cornerRadius="25dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.095"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <LinearLayout
-        android:layout_width="774dp"
-        android:layout_height="243dp"
-        android:layout_marginTop="100dp"
-        android:orientation="horizontal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.529"
+    <EditText
+        android:id="@+id/escribirP"
+        android:layout_width="280dp"
+        android:layout_height="240dp"
+        android:layout_marginStart="300dp"
+        android:layout_marginTop="120dp"
+        android:backgroundTint="#c5e063"
+        android:cursorVisible="false"
+        android:ems="10"
+        android:focusable="false"
+        android:gravity="center"
+        android:inputType="text"
+        android:textColor="#c5e063"
+        android:textColorHint="#ADBA7E"
+        android:textSize="60dp"
+        android:hint=":)"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_d1"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="250dp"
+        android:layout_height="75dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="120dp"
+        android:background="@drawable/rounded_button"
+        android:text=" Dedo 1"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toStartOf="@+id/escribirP"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:strokeColor="#FDCE24">
+        app:strokeColor="#FDCE24" />
 
-        <LinearLayout
-            android:layout_width="391dp"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
+    <Button
+        android:id="@+id/btn_d2"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="250dp"
+        android:layout_height="75dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rounded_button"
+        android:text="Dedo 2"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toStartOf="@+id/escribirP"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_d1"
+        app:strokeColor="#FDCE24" />
 
-            <Button
-                android:id="@+id/btn_d1"
-                style="?attr/materialButtonOutlinedStyle"
-                android:layout_width="match_parent"
-                android:layout_height="75dp"
-                android:text=" Dedo 1"
-                app:strokeColor="#FDCE24"
-                android:background="@drawable/custom_button"
-                android:layout_marginBottom="10dp"
-                />
+    <Button
+        android:id="@+id/btn_d3"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="250dp"
+        android:layout_height="75dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rounded_button"
+        android:text="Dedo 3"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toStartOf="@+id/escribirP"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_d2"
+        app:strokeColor="#FDCE24" />
 
-            <Button
-                android:id="@+id/button14"
-                style="?attr/materialButtonOutlinedStyle"
-                android:layout_width="match_parent"
-                android:layout_height="75dp"
-                android:text="Dedo 2"
-                app:strokeColor="#FDCE24"
-                android:background="@drawable/custom_button"
-                android:layout_marginBottom="10dp"/>
+    <Button
+        android:id="@+id/btn_d4"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="250dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/rounded_button"
+        android:text="Dedo 4"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.979"
+        app:layout_constraintStart_toEndOf="@+id/escribirP"
+        app:layout_constraintTop_toTopOf="parent" />
 
-            <Button
-                android:id="@+id/button15"
-                style="?attr/materialButtonOutlinedStyle"
-                android:layout_width="match_parent"
-                android:layout_height="75dp"
-                android:text="Dedo 2"
-                app:strokeColor="#FDCE24"
-                android:background="@drawable/custom_button"/>
-        </LinearLayout>
+    <Button
+        android:id="@+id/btn_d5"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="250dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/rounded_button"
+        android:text="Dedo 5"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/escribirP"
+        app:layout_constraintTop_toBottomOf="@+id/btn_d4" />
 
-        <LinearLayout
-            android:layout_width="391dp"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
+    <Button
+        android:id="@+id/btn_d6"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="250dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/rounded_button"
+        android:text="Dedo 6"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/escribirP"
+        app:layout_constraintTop_toBottomOf="@+id/btn_d5" />
 
-            <Button
-                android:id="@+id/button11"
-                style="?attr/materialButtonOutlinedStyle"
-                android:layout_width="match_parent"
-                android:layout_height="75dp"
-                android:text="Dedo 4"
-                android:background="@drawable/custom_button"
-                android:layout_marginBottom="10dp"
-                android:layout_marginLeft="5dp"/>
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="350dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Teclado de Letras"
+        android:textColor="#C5E063"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-            <Button
-                android:id="@+id/button10"
-                style="?attr/materialButtonOutlinedStyle"
-                android:layout_width="match_parent"
-                android:layout_height="75dp"
-                android:text="Dedo 5"
-                android:background="@drawable/custom_button"
-                android:layout_marginBottom="10dp"
-                android:layout_marginLeft="5dp"/>
 
-            <Button
-                android:id="@+id/button12"
-                style="?attr/materialButtonOutlinedStyle"
-                android:layout_width="match_parent"
-                android:layout_height="75dp"
-                android:text="Dedo 6"
-                android:background="@drawable/custom_button"
-                android:layout_marginBottom="10dp"
-                android:layout_marginLeft="5dp"/>
 
-        </LinearLayout>
-    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

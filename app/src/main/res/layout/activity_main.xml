@@ -5,57 +5,62 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:background="#07224f">
+    android:background="#507255">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="-102dp"
+        tools:layout_editor_absoluteY="-226dp">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="510dp"
-            android:orientation="vertical"
-            android:gravity="center">
+            android:gravity="center"
+            android:orientation="vertical">
 
             <ImageView
                 android:id="@+id/imageView"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:srcCompat="@drawable/grupo_vide" />
+                android:layout_height="200dp"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/icon_vide_foreground" />
+
 
             <ImageView
                 android:id="@+id/imageView2"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:srcCompat="@drawable/vide" />
+                android:layout_height="182dp"
+                app:srcCompat="@mipmap/text_vide_foreground" />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:gravity="center">
+            android:layout_height="339dp"
+            android:gravity="center"
+            android:orientation="vertical">
 
             <Button
                 android:id="@+id/btnIniciarSesion"
                 android:layout_width="350dp"
                 android:layout_height="65dp"
                 android:layout_marginBottom="20dp"
-                android:background="@drawable/custom_button"
+                android:background="@drawable/rounded_button"
+                android:duration="500"
                 android:text="Iniciar Sesión"
                 android:textAllCaps="false"
                 android:textSize="20dp"
-                app:backgroundTint="@null"
+                app:backgroundTint="@null" />
 
-                app:cornerRadius="25dp" />
 
             <Button
                 android:id="@+id/btnRegistrar"
                 android:layout_width="350dp"
                 android:layout_height="65dp"
                 android:layout_marginBottom="20dp"
-                android:background="@drawable/custom_button"
+                android:background="@drawable/rounded_button"
+                android:duration="500"
                 android:text="Registrar"
                 android:textAllCaps="false"
                 android:textSize="20dp"

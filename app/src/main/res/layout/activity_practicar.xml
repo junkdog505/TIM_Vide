@@ -5,116 +5,133 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Practicar"
-    android:background="#07224f">
+    android:background="#507255">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/textView3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="Practicar"
-            android:textColor="#FDCE24"
-            android:textSize="30dp" />
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="250dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Prácticas"
+        android:textColor="#C5E063"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="144dp"
-            android:orientation="vertical"
-            android:gravity="center">
+    <ImageButton
+        android:id="@+id/btnPalabras"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="20dp"
+        android:contentDescription="Practicar Palabras en Braille"
+        android:background="@drawable/rounded_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.061"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSignos"
+        app:srcCompat="@mipmap/words_foreground" />
 
-            <Button
-                android:id="@+id/button7"
-                android:layout_width="350dp"
-                android:layout_height="89dp"
-                android:background="@drawable/custom_button"
-                android:text="Ayuda"
-                app:cornerRadius="25dp"
-                android:textSize="35dp"
-                android:textAllCaps="false"
-                app:backgroundTint="@null"
+    <ImageButton
+        android:id="@+id/btnLetras"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="20dp"
+        android:contentDescription="Practicar Letras en Braille"
+        android:background="@drawable/rounded_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.076"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:srcCompat="@mipmap/word_foreground" />
 
-                />
-        </LinearLayout>
+    <ImageButton
+        android:id="@+id/btnNumeros"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="20dp"
+        android:contentDescription="Practicar Númeross en Braille"
+        android:background="@drawable/rounded_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.061"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnLetras"
+        app:srcCompat="@mipmap/numbers_foreground" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="137dp"
-            android:orientation="vertical"
-            android:gravity="center">
+    <ImageButton
+        android:id="@+id/btnSignos"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="Practicar Signos en Braille"
+        android:background="@drawable/rounded_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.061"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnNumeros"
+        app:srcCompat="@mipmap/signals_foreground" />
 
-            <Button
-                android:id="@+id/btnLetras"
-                android:layout_width="350dp"
-                android:layout_height="89dp"
-                android:background="@drawable/custom_button"
-                android:text="Letras"
-                app:cornerRadius="25dp"
-                android:textSize="35dp"
-                android:textAllCaps="false"
-                app:backgroundTint="@null"
-                />
-        </LinearLayout>
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Letras"
+        android:textColor="#C5E063"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.609"
+        app:layout_constraintStart_toEndOf="@+id/btnLetras"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="142dp"
-            android:orientation="vertical"
-            android:gravity="center">
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="20dp"
+        android:text="Números"
+        android:textColor="#C5E063"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.644"
+        app:layout_constraintStart_toEndOf="@+id/btnNumeros"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
 
-            <Button
-                android:id="@+id/btnNumeros"
-                android:layout_width="350dp"
-                android:layout_height="89dp"
-                android:background="@drawable/custom_button"
-                android:text="Números"
-                app:cornerRadius="25dp"
-                android:textSize="35dp"
-                android:textAllCaps="false"
-                app:backgroundTint="@null"
-                />
-        </LinearLayout>
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="Signos de Gramática"
+        android:textColor="#C5E063"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.644"
+        app:layout_constraintStart_toEndOf="@+id/btnSignos"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="157dp"
-            android:orientation="vertical"
-            android:gravity="center">
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="20dp"
+        android:text="Palabras"
+        android:textColor="#C5E063"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.644"
+        app:layout_constraintStart_toEndOf="@+id/btnPalabras"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
 
-            <Button
-                android:id="@+id/btnSignos"
-                android:layout_width="350dp"
-                android:layout_height="89dp"
-                android:background="@drawable/custom_button"
-                android:text="Signos"
-                app:cornerRadius="25dp"
-                android:textSize="35dp"
-                android:textAllCaps="false"
-                app:backgroundTint="@null"
-                />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="151dp"
-            android:orientation="vertical"
-            android:gravity="center">
-
-            <Button
-                android:id="@+id/btnPalabras"
-                android:layout_width="350dp"
-                android:layout_height="89dp"
-                android:background="@drawable/custom_button"
-                android:text="Palabras"
-                app:cornerRadius="25dp"
-                android:textSize="35dp"
-                android:textAllCaps="false"
-                app:backgroundTint="@null"
-                />
-        </LinearLayout>
-    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -5,76 +5,110 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Home"
-    android:background="#07224f">
+    android:background="#507255">
+
+    <ImageButton
+        android:id="@+id/btnPracticar"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="524dp"
+        android:background="@drawable/rounded_button"
+        android:contentDescription="Practicar Braille"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/practicar_foreground" />
+
+    <ImageButton
+        android:id="@+id/btnAprender"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="524dp"
+        android:background="@drawable/rounded_button"
+        android:contentDescription="Aprender Braille"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.924"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/aprender_foreground" />
+
+    <TextView
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Aprender"
+        android:textColor="#C5E063"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/btnPracticar" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Practicar"
+        android:textColor="#C5E063"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAprender" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="200dp"
+        android:layout_height="95dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Menú"
+        android:textColor="#C5E063"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_width="364dp"
+        android:layout_height="305dp"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8">
 
         <TextView
-            android:id="@+id/textView2"
+            android:id="@+id/textView7"
             android:layout_width="match_parent"
-            android:layout_height="93dp"
-            android:gravity="center"
-            android:text="Menú de Vide"
-            android:textColor="#FDCE24"
-            android:textSize="30dp" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="180dp"
-            android:orientation="vertical"
-            android:gravity="center">
-
-            <Button
-                android:id="@+id/button3"
-                android:layout_width="350dp"
-                android:layout_height="89dp"
-                android:text="Ayuda"
-                android:textSize="35dp"
-                android:textAllCaps="false"
-                android:background="@drawable/custom_button"
-                app:backgroundTint="@null"
-                />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="180dp"
-            android:gravity="center"
-            android:orientation="vertical">
-
-            <Button
-                android:id="@+id/btnAprender"
-                android:layout_width="350dp"
-                android:layout_height="89dp"
-                android:text="Aprender"
-                android:textSize="35dp"
-                android:textAllCaps="false"
-                android:background="@drawable/custom_button"
-                app:backgroundTint="@null"
-                />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="180dp"
-            android:gravity="center"
-            android:orientation="vertical">
-
-            <Button
-                android:id="@+id/btnPracticar"
-                android:layout_width="350dp"
-                android:layout_height="89dp"
-                android:text="Practicar"
-                android:textSize="35dp"
-                android:textAllCaps="false"
-                android:background="@drawable/custom_button"
-                app:backgroundTint="@null"
-                />
-        </LinearLayout>
-
+            android:layout_height="match_parent"
+            android:justificationMode="inter_word"
+            android:text="El Braille es un sistema de escritura táctil desarrollado por Louis Braille en el siglo XIX. Está diseñado para permitir a las personas ciegas o con discapacidad visual leer y escribir mediante el tacto. Consiste en la combinación de puntos en relieve dispuestos en celdas o matrices, donde cada combinación representa letras, números y símbolos. Los lectores de Braille pasan sus dedos sobre el texto, reconociendo las configuraciones de puntos para interpretar el contenido. El Braille es una herramienta fundamental para la comunicación y la educación de las personas con discapacidad visual, brindando acceso a la información y promoviendo la igualdad de oportunidades."
+            android:textColor="#A1CCA5"
+            android:textSize="16dp" />
     </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="Un poco de . . ."
+        android:textColor="#C5E063"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.081"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

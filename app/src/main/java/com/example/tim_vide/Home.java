@@ -7,6 +7,7 @@ import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 public class Home extends AppCompatActivity {
 
@@ -15,8 +16,8 @@ public class Home extends AppCompatActivity {
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
-        Button btn1 = findViewById(R.id.btnAprender);
-        Button btn2 = findViewById(R.id.btnPracticar);
+        ImageButton btn1 = findViewById(R.id.btnAprender);
+        ImageButton btn2 = findViewById(R.id.btnPracticar);
 
         btn1.setOnClickListener(new View.OnClickListener(){
             @Override
