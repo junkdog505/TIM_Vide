@@ -3,5 +3,4 @@
     <style name="AppTheme.NoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="android:statusBarColor">#507255</item>
     </style>
-
 </resources>
