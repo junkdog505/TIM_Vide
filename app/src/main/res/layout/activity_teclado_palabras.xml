@@ -24,36 +24,38 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
     <Button
         android:id="@+id/borrar"
         android:layout_width="150dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="56dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="64dp"
         android:background="@drawable/rounded_button"
         android:text="Borrar"
         android:textSize="20dp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.615"
+        app:layout_constraintHorizontal_bias="0.703"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/escribirP"
         android:layout_width="280dp"
-        android:layout_height="240dp"
-        android:layout_marginStart="300dp"
-        android:layout_marginTop="120dp"
+        android:layout_height="170dp"
+        android:layout_marginTop="192dp"
         android:backgroundTint="#c5e063"
         android:cursorVisible="false"
         android:ems="10"
         android:focusable="false"
         android:gravity="center"
+        android:hint=":)"
         android:inputType="textMultiLine"
         android:textColor="#c5e063"
         android:textColorHint="#ADBA7E"
         android:textSize="60sp"
-        android:hint=":)"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.499"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -160,6 +162,20 @@
         android:textColor="#C5E063"
         android:textSize="35dp"
         android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnVerificar"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="64dp"
+        android:background="@drawable/rounded_button"
+        android:text="Verificar"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/borrar"
+        app:layout_constraintHorizontal_bias="0.606"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

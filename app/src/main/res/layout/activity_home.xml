@@ -11,29 +11,34 @@
         android:id="@+id/btnPracticar"
         android:layout_width="180dp"
         android:layout_height="180dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="524dp"
         android:background="@drawable/rounded_button"
         android:contentDescription="Practicar Braille"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.07"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.785"
         app:srcCompat="@mipmap/practicar_foreground" />
 
     <ImageButton
         android:id="@+id/btnAprender"
         android:layout_width="180dp"
         android:layout_height="180dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="524dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginBottom="83dp"
         android:background="@drawable/rounded_button"
         android:contentDescription="Aprender Braille"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.924"
+        app:layout_constraintHorizontal_bias="0.917"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.896"
         app:srcCompat="@mipmap/aprender_foreground" />
 
     <TextView
+        android:id="@+id/textView5"
         android:layout_width="180dp"
         android:layout_height="50dp"
         android:layout_marginStart="18dp"
@@ -43,24 +48,28 @@
         android:textColor="#C5E063"
         android:textSize="25dp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/textView2"
-        app:layout_constraintTop_toBottomOf="@+id/btnPracticar" />
+        app:layout_constraintTop_toBottomOf="@+id/btnPracticar"
+        app:layout_constraintVertical_bias="0.170" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="180dp"
         android:layout_height="50dp"
-        android:layout_marginStart="20dp"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="20dp"
         android:gravity="center"
         android:text="Practicar"
         android:textColor="#C5E063"
         android:textSize="25dp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnAprender" />
+        app:layout_constraintTop_toBottomOf="@+id/btnAprender"
+        app:layout_constraintVertical_bias="0.170" />
 
     <TextView
         android:id="@+id/textView"
